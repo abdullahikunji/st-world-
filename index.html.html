@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Traders World</title>
+  <link rel="stylesheet" href="st.css">
+
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>🌟 Smart Traders World</h1>
+
+    <!-- Login Form -->
+    <div id="login">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup" style="display:none;">
+      <h2>Sign Up</h2>
+      <input type="text" id="signupName" placeholder="Full Name">
+      <input type="email" id="signupEmail" placeholder="Email">
+      <input type="password" id="signupPassword" placeholder="Password">
+      <button onclick="signup()">Create Account</button>
+      <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+
+    <!-- Floating Animation -->
+    <div id="animationBox"></div>
+    <div id="animationBox2"></div>
+    <div id="animationBox3"></div>
+  </div>
+  
+  <!-- At the end of your body tag -->
+<script src="st.js"></script>
+
+</body>
+</html>
